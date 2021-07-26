@@ -1,0 +1,6 @@
+def deb_card(card_num: str):
+    if type(card_num) == str and card_num.isdigit() and len(card_num) == 16:
+        return f'**** **** **** {card_num [-4: ]}'
+
+
+print(deb_card(input('введите номер карты ')))
